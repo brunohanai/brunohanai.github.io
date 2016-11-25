@@ -1,0 +1,8 @@
+theme: minima
+timezone: America/Sao_Paulo
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
