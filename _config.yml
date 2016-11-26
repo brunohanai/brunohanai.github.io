@@ -1,5 +1,6 @@
 theme: minima
 timezone: America/Sao_Paulo
+permalink: none
 defaults:
   -
     scope:

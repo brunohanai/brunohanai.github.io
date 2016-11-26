@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Hello World
-permalink: hello-world
+title: Hello World 
+category: blog
+tags: [blog]
 ---
 
 Faz muito tempo que li sobre **GitHub Pages** e **Jekyll**.
