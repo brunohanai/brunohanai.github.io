@@ -8,23 +8,73 @@
     <!--outros meta-->
     <!--favicon-->
 
-    <link rel="stylesheet" href="{{ site.url }}/assets/theme/semantic.min.css">
+    <!--<link rel="stylesheet" href="{{ site.url }}/assets/theme/semantic.min.css">-->
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/site.css">
+
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/container.css">
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/grid.css">
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/header.css">
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/image.css">
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/menu.css">
+
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/divider.css">
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/list.css">
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/icon.css">
+    <link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/components/label.css">
+
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+        }
+
+        code {
+            background-color: #EEE;
+            padding: 2px 6px;
+        }
+
+        .ui.menu .item img.logo {
+            margin-right: 1.5em;
+        }
+        .main.container {
+            margin-top: 7em;
+        }
+        .wireframe {
+            margin-top: 2em;
+        }
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 5em 0em;
+        }
+
+        .ui.text.container {
+            max-width: none !important;
+        }
+    </style>
 </head>
 <body>
-    <div class="ui container">
-        <header>
-            {% include menu.html %}
-        </header>
+    {% include menu.html %}
 
+    <div class="ui main text container">
         {{ content }}
-
-        <!--comments-->
-
-        <!--paginator-->
-
-        <footer></footer>
     </div>
 
+    <!--comments-->
+
+    <!--paginator-->
+
+    <footer></footer>
+
     <!--analytics-->
+
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 </html>

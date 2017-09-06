@@ -4,20 +4,24 @@ layout: default
 <div class="ui grid container">
     <div class="one column row">
         <div class="column">
-            <div class="ui inverted segment">
-                <h3 class="ui inverted header">{{ page.title }}</h3>
+            <div class="ui text container">
+                <h1 class="ui center aligned header">{{ page.title }}</h1>
+
+                <!--{% for tag in page.tags %}-->
+                    <!--<a href="#" class="ui orange label">{{ tag }}</a>-->
+                <!--{% endfor %}-->
             </div>
         </div>
 
         <div class="one column row">
             <div class="column">
                 {{ content }}
-            </div>
 
-            <strong>Tags:</strong>
-            {% for tag in page.tags %}
-                <a href="#" class="ui basic label">{{ tag }}</a>
-            {% endfor %}
+                <p>
+                    Alguma dúvida? Algum erro? Algum comentário?
+                    <a href="https://github.com/brunohanai/brunohanai.github.io/issues">Envie para mim</a>.
+                </p>
+            </div>
         </div>
     </div>
 </div>
