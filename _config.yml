@@ -7,3 +7,4 @@ defaults:
       path: ""
     values:
       layout: default
+ga_tracking_id: "UA-37875984-5"

@@ -8,6 +8,10 @@
     <!--outros meta-->
     <!--favicon-->
 
+    {% if site.ga_tracking_id and jekyll.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
+
     <!--<link rel="stylesheet" href="{{ site.url }}/assets/theme/semantic.min.css">-->
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
